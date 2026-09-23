@@ -1,0 +1,22 @@
+class Calculator:
+    def calculate(self, a, b):
+        print("Addition:", a + b)
+
+
+class AdvancedCalculator(Calculator):
+    def calculate(self, a, b):
+        print("Addition:", a + b)
+        print("Subtraction:", a - b)
+        print("Multiplication:", a * b)
+        
+        if b != 0:
+            print("Division:", a / b)
+        else:
+            print("Division: Cannot divide by zero")
+
+
+# Creating object of child class
+obj = AdvancedCalculator()
+
+# Calling overridden function
+obj.calculate(20, 5)
